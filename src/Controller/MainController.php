@@ -19,7 +19,7 @@ class MainController extends AbstractController
      */
     public function index(): Response
     {
-
+ echo "Hello daniyal branch";
         $data = $this->getDoctrine()->getRepository(Crud::class)->findAll();
         return $this->render('main/index.html.twig', [
            'list' => $data
